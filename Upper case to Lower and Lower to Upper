@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    
+    
+    //Lower case to Upper case
+    string str="adjasndkjnaskjdnkasndkjsa dkjsandkj";
+    sort(str.begin(),str.end());
+    
+    for(int i=0;i<str.size();i++){
+        if(str[i]>='a' && str[i]<='z')
+        str[i] -=32;
+    }
+    cout<<str<<endl;
+    
+    //Upper case to Lower case
+    for(int i=0;i<str.size();i++){
+        if(str[i]>='A' && str[i]<='Z')
+        str[i]  +=32;
+    }
+    cout<<str<<endl;
+    return 0;
+}
